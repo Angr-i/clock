@@ -1,0 +1,61 @@
+.clock{
+    user-select: none;
+    width: 300px;
+    height: 75px;
+    border: 25px solid inear-gradient(blue, 10%, pink);
+    margin: 250px auto;
+    background: #000;
+    color: aliceblue;
+    justify-items: center;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
+    
+    font-size: 60px;
+    
+    font-family: 'Bebas Neue', cursive;
+    
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+}
+.clock::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+      to left,
+      #ff5770,
+      #e4428d,
+      #c42da8,
+      #9e16c3,
+      #6501de,
+      #9e16c3,
+      #c42da8,
+      #e4428d,
+      #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+}
+
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
